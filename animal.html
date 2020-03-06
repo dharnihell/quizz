@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Quiz website">
+  <meta name="keywords" content="victor nwakwue">
+  <meta name="author" content="Victor Nwakwue">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|PT+Sans+Caption|Roboto&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Quiz website | Animal Quiz</title>
+
+  <style>
+    .grid {
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <section>
+    <div class="menu">
+      <button class="menu-category">menu</button> 
+    </div>
+
+    <!-- --------------------Modal----------------- -->
+    <div class="bg-modal">
+      <div class="close-modal">+</div>
+        <div class="quiz-questions">
+          <div class="quiz-body">
+            <h4>Select Quiz Category</h4>
+            <hr style="margin-bottom: 20px">
+
+            <div class="quiz-buttons">
+              <a href="football.html" class="btn0">Football</a>
+              <a href="currentaffairs.html" class="btn1">Current Affairs</a>
+              <a href="animal.html" class="btn2">Animals</a>
+              <a href="science.html" class="btn3">Science</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- --------------------Quiz Section----------------- -->
+    <div class="grid" id="grid">
+      <div id="quiz">
+        <h1>Animal Quiz</h1>
+        <hr style="margin-bottom: 20px">
+
+        <p id="question"></p>
+
+        <div class="buttons">
+          <button id="btn0"><span id="choice0"></span></button>
+          <button id="btn1"><span id="choice1"></span></button>
+          <button id="btn2"><span id="choice2"></span></button>
+          <button id="btn3"><span id="choice3"></span></button>
+        </div>
+
+        <hr style="margin-top: 50px">
+        <footer>
+          <p id="progress">Question x of y</p>
+        </footer>
+      </div>
+    </div>
+
+  </section>
+
+  <ul>
+    <li>
+      <span>Dark</span>
+      <span>Light</span>
+    </li>
+  </ul>
+
+  <!-- javascript ---->
+  <script src="js/animal/animalapp.js"></script>
+  <script src="js/animal/animal-control.js"></script>
+  <script src="js/animal/animal-question.js"></script>
+  <script src="js/dark.js"></script>
+
+
+
+</body>
+
+</html>
